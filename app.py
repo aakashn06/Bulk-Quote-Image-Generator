@@ -2,6 +2,20 @@ import streamlit as st
 from PIL import Image, ImageDraw, ImageFont
 import io, zipfile, textwrap, os
 
+FONT_PATHS = {
+    "Barlow Condensed": "fonts/BarlowCondensed-Regular.ttf",
+    "Bebas Neue": "fonts/BebasNeue-Regular.ttf",
+    "DM Serif Display": "fonts/DMSerifDisplay-Regular.ttf",
+    "Lato": "fonts/Lato-Regular.ttf",
+    "Merriweather": "fonts/Merriweather-Regular.ttf",
+    "Montserrat": "fonts/Montserrat-Regular.ttf",
+    "Open Sans": "fonts/OpenSans-Regular.ttf",
+    "Oswald": "fonts/Oswald-Regular.ttf",
+    "Playfair Display": "fonts/PlayfairDisplay-Regular.ttf",
+    "Raleway": "fonts/Raleway-Regular.ttf",
+    "Roboto": "fonts/Roboto-Regular.ttf",
+}
+
 st.set_page_config(page_title="Quote Generator")
 
 st.title("Bulk Quote Image Generator")
@@ -47,20 +61,6 @@ quotes_file = st.file_uploader(
 # -----------------------------
 # FONT LOADER
 # -----------------------------
-FONT_PATHS = {
-    "Barlow Condensed": "fonts/BarlowCondensed-Regular.ttf",
-    "Bebas Neue": "fonts/BebasNeue-Regular.ttf",
-    "DM Serif Display": "fonts/DMSerifDisplay-Regular.ttf",
-    "Lato": "fonts/Lato-Regular.ttf",
-    "Merriweather": "fonts/Merriweather-Regular.ttf",
-    "Montserrat": "fonts/Montserrat-Regular.ttf",
-    "Open Sans": "fonts/OpenSans-Regular.ttf",
-    "Oswald": "fonts/Oswald-Regular.ttf",
-    "Playfair Display": "fonts/PlayfairDisplay-Regular.ttf",
-    "Raleway": "fonts/Raleway-Regular.ttf",
-    "Roboto": "fonts/Roboto-Regular.ttf",
-}
-
 def load_font(size):
     path = FONT_PATHS.get(font_choice)
     return ImageFont.truetype(path, size)
