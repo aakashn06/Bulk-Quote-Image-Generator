@@ -27,12 +27,7 @@ box_padding = st.sidebar.slider("Text Padding", 0, 200, 60)
 
 font_choice = st.sidebar.selectbox(
     "Font",
-    [
-        "Helvetica",
-        "Arial",
-        "Times New Roman",
-        "Courier New"
-    ]
+    list(FONT_PATHS.keys())
 )
 
 # -----------------------------
