@@ -53,10 +53,17 @@ quotes_file = st.file_uploader(
 # FONT LOADER
 # -----------------------------
 FONT_PATHS = {
-    "Helvetica": "/System/Library/Fonts/Supplemental/Helvetica.ttc",
-    "Arial": "/System/Library/Fonts/Supplemental/Arial.ttf",
-    "Times New Roman": "/System/Library/Fonts/Supplemental/Times New Roman.ttf",
-    "Courier New": "/System/Library/Fonts/Supplemental/Courier New.ttf",
+    "Barlow Condensed": "fonts/BarlowCondensed-Regular.ttf",
+    "Bebas Neue": "fonts/BebasNeue-Regular.ttf",
+    "DM Serif Display": "fonts/DMSerifDisplay-Regular.ttf",
+    "Lato": "fonts/Lato-Regular.ttf",
+    "Merriweather": "fonts/Merriweather-Regular.ttf",
+    "Montserrat": "fonts/Montserrat-Regular.ttf",
+    "Open Sans": "fonts/OpenSans-Regular.ttf",
+    "Oswald": "fonts/Oswald-Regular.ttf",
+    "Playfair Display": "fonts/PlayfairDisplay-Regular.ttf",
+    "Raleway": "fonts/Raleway-Regular.ttf",
+    "Roboto": "fonts/Roboto-Regular.ttf",
 }
 
 def load_font(size):
