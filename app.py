@@ -62,7 +62,7 @@ FONT_PATHS = {
 }
 
 def load_font(size):
-    path = FONT_PATHS.get(font_choice, FONT_PATHS["Helvetica"])
+    path = FONT_PATHS.get(font_choice)
     return ImageFont.truetype(path, size)
 
 # -----------------------------
